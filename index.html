@@ -317,179 +317,224 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="section" id="proyectos">
-      <div class="container">
+<section class="section" id="proyectos">
+  <div class="container">
 
-        <div class="section-heading">
-          <span class="eyebrow">TRABAJO SELECCIONADO</span>
-          <h2>Proyectos destacados</h2>
+    <div class="section-heading">
+      <span class="eyebrow">TRABAJO SELECCIONADO</span>
+      <h2>Proyectos destacados</h2>
+      <p>
+        Proyectos que demuestran mi experiencia práctica
+        en desarrollo backend, bases de datos y contenedores.
+      </p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Proyecto 1: TaskFlow -->
+      <article class="panel project-card">
+
+        <div class="project-visual project-visual-inventory">
+          <img
+            class="inventory-cover"
+            src="assets/gestor-de-tareas/Imagen-01.png"
+            alt="Vista principal de TaskFlow, aplicación de gestión de tareas"
+            loading="lazy"
+          >
+
+          <span class="project-visual-label">
+            TASKFLOW · GESTIÓN DE TAREAS
+          </span>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-meta">
+            <span>01</span>
+            <span>BACKEND</span>
+          </div>
+
+          <h3>TaskFlow — Plataforma de Gestión de Tareas</h3>
+
           <p>
-            Proyectos que demuestran mi experiencia práctica
-            en desarrollo backend, bases de datos y contenedores.
+            Aplicación web para gestionar tareas personales mediante
+            una API REST con FastAPI, PostgreSQL y un frontend en HTML,
+            CSS y JavaScript. Implementa operaciones CRUD y utiliza Docker
+            Compose para ejecutar los servicios en contenedores.
           </p>
-        </div>
 
-        <div class="projects-grid">
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>Docker y Docker Compose</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
 
-          <!-- Proyecto 1: API REST -->
-          <article class="panel project-card">
+          <a
+            class="project-link"
+            href="https://github.com/overrun1026/ProyectoApiDeTareasPersonales"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver proyecto en GitHub ↗
+          </a>
 
-            <div class="project-visual project-visual-api">
-              <div class="mock-window">
-                <div class="mock-window-header">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <p>inventory-api</p>
-                </div>
+          <!-- Galería de imágenes de TaskFlow -->
+          <details class="project-gallery">
+            <summary>
+              Ver más capturas (haz clic en cualquier imagen para ampliarla)
+            </summary>
 
-                <div class="mock-code">
-                  <p><span class="code-purple">GET</span> /api/products</p>
-                  <p><span class="code-green">200 OK</span></p>
-                  <p>{</p>
-                  <p class="code-indent">"products": [...]</p>
-                  <p class="code-indent">"status": "success"</p>
-                  <p>}</p>
-                </div>
-              </div>
-              <span class="project-visual-label">REST API</span>
+            <div class="project-gallery-grid">
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/gestor-de-tareas/Imagen-01.png"
+                  alt="Vista principal de TaskFlow"
+                  loading="lazy"
+                >
+                <figcaption>Vista principal · 01</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/gestor-de-tareas/Imagen-02.png"
+                  alt="Formulario para crear o editar tareas en TaskFlow"
+                  loading="lazy"
+                >
+                <figcaption>Crear y editar tareas · 02</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/gestor-de-tareas/Imagen-03.png"
+                  alt="Listado de tareas con opciones de edición y eliminación"
+                  loading="lazy"
+                >
+                <figcaption>Listado de tareas · 03</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/gestor-de-tareas/Imagen-04.png"
+                  alt="Resumen de tareas por estado"
+                  loading="lazy"
+                >
+                <figcaption>Resumen de tareas · 04</figcaption>
+              </figure>
+
             </div>
-
-            <div class="project-content">
-              <div class="project-meta">
-                <span>01</span>
-                <span>BACKEND</span>
-              </div>
-
-              <h3>API REST para inventario</h3>
-
-              <p>
-                Proyecto enfocado en desarrollar servicios backend
-                para la gestión de inventario, utilizando una API
-                REST, persistencia en PostgreSQL y contenedores.
-              </p>
-
-              <div class="skill-tags">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>PostgreSQL</span>
-                <span>Docker</span>
-              </div>
-
-              <a
-                class="project-link"
-                href="https://github.com/overrun1026"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Explorar en GitHub ↗
-              </a>
-            </div>
-
-          </article>
-
-          <!-- Proyecto 2: Sistema de inventario -->
-          <article class="panel project-card">
-
-            <div class="project-visual project-visual-inventory">
-              <img
-                class="inventory-cover"
-                src="assets/inventario/01-image.png"
-                alt="Vista principal del sistema de inventario web"
-                loading="lazy"
-              >
-
-              <span class="project-visual-label">
-                SISTEMA DE INVENTARIO
-              </span>
-            </div>
-
-            <div class="project-content">
-              <div class="project-meta">
-                <span>02</span>
-                <span>APLICACIÓN WEB</span>
-              </div>
-
-              <h3>Sistema de inventario con Docker Compose</h3>
-
-              <p>
-                Aplicación web para la gestión de inventario,
-                con backend desarrollado en Python y FastAPI,
-                base de datos PostgreSQL e interfaz web.
-                Docker Compose permite configurar y ejecutar
-                los servicios del proyecto de forma conjunta.
-              </p>
-
-              <div class="skill-tags">
-                <span>Python</span>
-                <span>FastAPI</span>
-                <span>PostgreSQL</span>
-                <span>JavaScript</span>
-                <span>Docker Compose</span>
-              </div>
-
-              <a
-                class="project-link"
-                href="https://github.com/overrun1026/App-Inventario-DockerCompose"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver proyecto en GitHub ↗
-              </a>
-
-              <!-- Galería de imágenes -->
-              <details class="project-gallery">
-                <summary>
-                  Ver más capturas (haz clic en cualquier imagen para ampliarla)
-                </summary>
-
-                <div class="project-gallery-grid">
-
-                  <figure class="project-gallery-item">
-                    <img
-                      src="assets/inventario/02-image.png"
-                      alt="Segunda captura del sistema de inventario"
-                      loading="lazy"
-                    >
-                    <figcaption>Vista del sistema · 02</figcaption>
-                  </figure>
-
-                  <figure class="project-gallery-item">
-                    <img
-                      src="assets/inventario/03-image.png"
-                      alt="Tercera captura del sistema de inventario"
-                      loading="lazy"
-                    >
-                    <figcaption>Vista del sistema · 03</figcaption>
-                  </figure>
-
-                  <figure class="project-gallery-item">
-                    <img
-                      src="assets/inventario/04-image.png"
-                      alt="Cuarta captura del sistema de inventario"
-                      loading="lazy"
-                    >
-                    <figcaption>Vista del sistema · 04</figcaption>
-                  </figure>
-
-                  <figure class="project-gallery-item">
-                    <img
-                      src="assets/inventario/05-image.png"
-                      alt="Quinta captura del sistema de inventario"
-                      loading="lazy"
-                    >
-                    <figcaption>Vista del sistema · 05</figcaption>
-                  </figure>
-
-                </div>
-              </details>
-            </div>
-
-          </article>
+          </details>
 
         </div>
-      </div>
-    </section>
+      </article>
+
+      <!-- Proyecto 2: Sistema de inventario -->
+      <article class="panel project-card">
+
+        <div class="project-visual project-visual-inventory">
+          <img
+            class="inventory-cover"
+            src="assets/inventario/01-image.png"
+            alt="Vista principal del sistema de inventario web"
+            loading="lazy"
+          >
+
+          <span class="project-visual-label">
+            SISTEMA DE INVENTARIO
+          </span>
+        </div>
+
+        <div class="project-content">
+
+          <div class="project-meta">
+            <span>02</span>
+            <span>APLICACIÓN WEB</span>
+          </div>
+
+          <h3>Sistema de inventario con Docker Compose</h3>
+
+          <p>
+            Aplicación web para la gestión de inventario,
+            con backend desarrollado en Python y FastAPI,
+            base de datos PostgreSQL e interfaz web.
+            Docker Compose permite configurar y ejecutar
+            los servicios del proyecto de forma conjunta.
+          </p>
+
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>JavaScript</span>
+            <span>Docker y Docker Compose</span>
+          </div>
+
+          <a
+            class="project-link"
+            href="https://github.com/overrun1026/App-Inventario-DockerCompose"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver proyecto en GitHub ↗
+          </a>
+
+          <!-- Galería de imágenes del inventario -->
+          <details class="project-gallery">
+            <summary>
+              Ver más capturas (haz clic en cualquier imagen para ampliarla)
+            </summary>
+
+            <div class="project-gallery-grid">
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/inventario/02-image.png"
+                  alt="Segunda captura del sistema de inventario"
+                  loading="lazy"
+                >
+                <figcaption>Vista del sistema · 02</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/inventario/03-image.png"
+                  alt="Tercera captura del sistema de inventario"
+                  loading="lazy"
+                >
+                <figcaption>Vista del sistema · 03</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/inventario/04-image.png"
+                  alt="Cuarta captura del sistema de inventario"
+                  loading="lazy"
+                >
+                <figcaption>Vista del sistema · 04</figcaption>
+              </figure>
+
+              <figure class="project-gallery-item">
+                <img
+                  src="assets/inventario/05-image.png"
+                  alt="Quinta captura del sistema de inventario"
+                  loading="lazy"
+                >
+                <figcaption>Vista del sistema · 05</figcaption>
+              </figure>
+
+            </div>
+          </details>
+
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
 
     <!-- Experiencia -->
     <section class="section section-alt" id="experiencia">
