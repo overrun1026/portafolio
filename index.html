@@ -12,9 +12,9 @@
 
   <title>Leonardo Gracia | Desarrollador Backend</title>
 
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/projects.css">
 </head>
 
 
@@ -102,7 +102,7 @@
 
             <div class="profile-photo">
               <img
-                src="assets/foto-perfil.jpg"
+                src="assets/img/profile/foto-perfil.jpg"
                 alt="Fotografía de Leonardo Gracia"
                 onerror="this.style.display='none'"
               >
@@ -249,622 +249,116 @@
       </div>
     </section>
 
-    <!-- Habilidades -->
-    <section class="section section-alt" id="habilidades">
-      <div class="container">
-
-        <div class="section-heading">
-          <span class="eyebrow">TECNOLOGÍAS</span>
-          <h2>Habilidades técnicas</h2>
-          <p>
-            Herramientas y tecnologías con las que he trabajado
-            y continúo desarrollándome.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-
-          <article class="panel skill-card">
-            <div class="skill-icon">Py</div>
-            <h3>Backend</h3>
-            <p>Desarrollo de lógica de negocio y servicios.</p>
-            <div class="skill-tags">
-              <span>Python</span>
-              <span>FastAPI</span>
-              <span>REST API</span>
-              <span>C++</span>
-              <span>C</span>
-            </div>
-          </article>
-
-          <article class="panel skill-card">
-            <div class="skill-icon">DB</div>
-            <h3>Bases de datos</h3>
-            <p>Persistencia, consultas y gestión de información.</p>
-            <div class="skill-tags">
-              <span>PostgreSQL</span>
-              <span>MySQL</span>
-              <span>SQL</span>
-            </div>
-          </article>
-
-          <article class="panel skill-card">
-            <div class="skill-icon">Co</div>
-            <h3>Contenedores e infraestructura</h3>
-            <p>Entornos de desarrollo y despliegue.</p>
-            <div class="skill-tags">
-              <span>Docker</span>
-              <span>Docker Compose</span>
-              <span>Linux</span>
-              <span>Nginx</span>
-              <span>Terraform</span>
-              <span>Jenkins</span>
-            </div>
-          </article>
-
-          <article class="panel skill-card">
-            <div class="skill-icon">Git</div>
-            <h3>Herramientas y web</h3>
-            <p>Control de versiones y tecnologías web.</p>
-            <div class="skill-tags">
-              <span>Git</span>
-              <span>GitHub</span>
-              <span>HTML5</span>
-              <span>CSS3</span>
-              <span>JavaScript</span>
-              <span>TypeScript</span>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
 
 
-<!-- Proyectos -->
-<section class="section" id="proyectos">
+<!-- Sección de habilidades y especialidades -->
+<section class="skills-section section" id="habilidades">
   <div class="container">
 
     <div class="section-heading">
-      <span class="eyebrow">TRABAJO SELECCIONADO</span>
-      <h2>Proyectos destacados</h2>
+      <span class="eyebrow">COMPETENCIAS TÉCNICAS</span>
+      <h2>Habilidades y <span class="text-gradient">tecnologías</span></h2>
       <p>
-        Proyectos que demuestran mi experiencia práctica
-        en desarrollo backend, APIs, bases de datos y contenedores.
+        Tecnologías y herramientas que utilizo para desarrollar aplicaciones,
+        construir APIs y gestionar entornos de desarrollo y despliegue.
       </p>
     </div>
 
-    <div class="projects-grid">
+    <div class="skills-grid">
 
-      <!-- Proyecto 1: TaskFlow -->
-      <article class="panel project-card">
-
-        <div class="project-visual project-visual-inventory">
-          <img
-            class="inventory-cover"
-            src="assets/gestor-de-tareas/Imagen-01.png"
-            alt="Vista principal de TaskFlow, aplicación de gestión de tareas"
-            loading="lazy"
-          >
-
-          <span class="project-visual-label">
-            TASKFLOW · GESTIÓN DE TAREAS
-          </span>
-        </div>
-
-        <div class="project-content">
-
-          <div class="project-meta">
-            <span>01</span>
-            <span>BACKEND</span>
-          </div>
-
-          <h3>TaskFlow — Plataforma de Gestión de Tareas</h3>
-
-          <p>
-            Aplicación web para gestionar tareas personales mediante
-            una API REST con FastAPI, PostgreSQL y un frontend en HTML,
-            CSS y JavaScript. Implementa operaciones CRUD y utiliza Docker
-            Compose para ejecutar los servicios en contenedores.
-          </p>
-
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>PostgreSQL</span>
-            <span>Docker y Docker Compose</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-          </div>
-
-          <a
-            class="project-link"
-            href="https://github.com/overrun1026/ProyectoApiDeTareasPersonales"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver proyecto en GitHub ↗
-          </a>
-
-          <details class="project-gallery">
-            <summary>
-              Ver más capturas (haz clic en cualquier imagen para ampliarla)
-            </summary>
-
-            <div class="project-gallery-grid">
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tareas/Imagen-01.png"
-                  alt="Vista principal de TaskFlow"
-                  loading="lazy"
-                >
-                <figcaption>Vista principal · 01</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tareas/Imagen-02.png"
-                  alt="Formulario para crear o editar tareas en TaskFlow"
-                  loading="lazy"
-                >
-                <figcaption>Crear y editar tareas · 02</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tareas/Imagen-03.png"
-                  alt="Listado de tareas con opciones de edición y eliminación"
-                  loading="lazy"
-                >
-                <figcaption>Listado de tareas · 03</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tareas/Imagen-04.png"
-                  alt="Resumen de tareas por estado"
-                  loading="lazy"
-                >
-                <figcaption>Resumen de tareas · 04</figcaption>
-              </figure>
-
-            </div>
-          </details>
-
+      <!-- 01. Especialidades -->
+      <article class="skill-card panel">
+        <div class="skill-icon">API</div>
+        <h3>Especialidades</h3>
+        <p>
+          Desarrollo backend enfocado en servicios, integración de sistemas
+          y gestión de datos.
+        </p>
+        <div class="skill-tags">
+          <span>Backend</span>
+          <span>APIs REST</span>
+          <span>Bases de datos</span>
+          <span>Contenedores</span>
         </div>
       </article>
 
-
-      <!-- Proyecto 2: Sistema de inventario -->
-      <article class="panel project-card">
-
-        <div class="project-visual project-visual-inventory">
-          <img
-            class="inventory-cover"
-            src="assets/inventario/01-image.png"
-            alt="Vista principal del sistema de inventario web"
-            loading="lazy"
-          >
-
-          <span class="project-visual-label">
-            SISTEMA DE INVENTARIO
-          </span>
-        </div>
-
-        <div class="project-content">
-
-          <div class="project-meta">
-            <span>02</span>
-            <span>APLICACIÓN WEB</span>
-          </div>
-
-          <h3>Sistema de inventario con Docker Compose</h3>
-
-          <p>
-            Aplicación web para la gestión de inventario,
-            con backend desarrollado en Python y FastAPI,
-            base de datos PostgreSQL e interfaz web.
-            Docker Compose permite configurar y ejecutar
-            los servicios del proyecto de forma conjunta.
-          </p>
-
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>PostgreSQL</span>
-            <span>JavaScript</span>
-            <span>Docker y Docker Compose</span>
-          </div>
-
-          <a
-            class="project-link"
-            href="https://github.com/overrun1026/App-Inventario-DockerCompose"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver proyecto en GitHub ↗
-          </a>
-
-          <details class="project-gallery">
-            <summary>
-              Ver más capturas (haz clic en cualquier imagen para ampliarla)
-            </summary>
-
-            <div class="project-gallery-grid">
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/inventario/02-image.png"
-                  alt="Segunda captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 02</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/inventario/03-image.png"
-                  alt="Tercera captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 03</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/inventario/04-image.png"
-                  alt="Cuarta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 04</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/inventario/05-image.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 05</figcaption>
-              </figure>
-
-            </div>
-          </details>
-
+      <!-- 02. Backend -->
+      <article class="skill-card panel">
+        <div class="skill-icon">BE</div>
+        <h3>Backend</h3>
+        <p>
+          Desarrollo de aplicaciones y servicios mediante APIs,
+          lógica de negocio y conexión con bases de datos.
+        </p>
+        <div class="skill-tags">
+          <span>Python</span>
+          <span>FastAPI</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
         </div>
       </article>
 
-      <!-- Proyecto 3: Gestor de tickets -->
-      <article class="panel project-card">
-
-        <div class="project-visual project-visual-inventory">
-          <img
-            class="inventory-cover"
-            src="assets/gestor-de-tickets/imagen_01.png"
-            alt="Vista principal del sistema de inventario web"
-            loading="lazy"
-          >
-
-          <span class="project-visual-label">
-            HelpDesk —- Sistema de manejo de tickets
-          </span>
-        </div>
-
-        <div class="project-content">
-
-          <div class="project-meta">
-            <span>03</span>
-            <span>SISTEMA WEB</span>
-          </div>
-
-          <h3>HelpDesk —- Sistema de manejo de tickets</h3>
-
-          <p>
-            Sistema web de gestión de tickets de soporte técnico, diseñado para organizar solicitudes,
-             administrar incidencias y facilitar la comunicación entre usuarios y administradores.
-              Incluye autenticación mediante JWT, control de permisos por roles, gestión de usuarios y categorías,
-               comentarios, notificaciones y seguimiento del estado de los tickets.
-            El backend está desarrollado con Node.js y Express, utilizando PostgreSQL para la persistencia de datos.
-             La aplicación está organizada en módulos con separación de rutas, controladores, servicios y repositorios,
-              e incorpora validación de solicitudes, middleware de autenticación y autorización, paginación y documentación de la API con OpenAPI.
-            Docker Compose permite ejecutar los servicios del backend, frontend y base de datos en un entorno integrado.
-          </p>
-
-          <div class="skill-tags">
-            <span>Node.js</span>
-            <span>Express</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
-            <span>JWT</span>
-            <span>RBAC</span>
-            <span>OpenAPI</span>
-            <span>Vite</span>
-            <span>Docker y Docker Compose</span>
-          </div>
-
-          <a
-            class="project-link"
-            href="https://github.com/overrun1026/ProyectoGestorDeTickets"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver proyecto en GitHub ↗
-          </a>
-
-          <details class="project-gallery">
-            <summary>
-              Ver más capturas (haz clic en cualquier imagen para ampliarla)
-            </summary>
-
-            <div class="project-gallery-grid">
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_01.png"
-                  alt="Segunda captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 02</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_02.png"
-                  alt="Tercera captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 03</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_03.png"
-                  alt="Cuarta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 04</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_05.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 05</figcaption>
-              </figure>
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_06.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 06</figcaption>
-              </figure>
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_07.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 07</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_08.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 08</figcaption>
-              </figure>
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_09.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 09</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_10.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 10</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_11.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 11</figcaption>
-              </figure>
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/gestor-de-tickets/imagen_12.png"
-                  alt="Quinta captura del sistema de inventario"
-                  loading="lazy"
-                >
-                <figcaption>Vista del sistema · 12</figcaption>
-              </figure>
-
-
-
-
-            </div>
-          </details>
-
+      <!-- 03. Bases de datos -->
+      <article class="skill-card panel">
+        <div class="skill-icon">DB</div>
+        <h3>Bases de datos</h3>
+        <p>
+          Modelado, consultas SQL e integración de bases de datos
+          con aplicaciones backend.
+        </p>
+        <div class="skill-tags">
+          <span>PostgreSQL</span>
+          <span>MySQL</span>
+          <span>SQL Server</span>
         </div>
       </article>
 
-      <!-- Proyecto 4: Finora -->
-      <article class="panel project-card">
-
-        <div class="project-visual project-visual-inventory">
-          <img
-            class="inventory-cover"
-            src="assets/finora-finanzas/imagen_01.png"
-            alt="Panel principal de Finora, gestor de finanzas personales"
-            loading="lazy"
-          >
-
-          <span class="project-visual-label">
-            FINORA · FINANZAS PERSONALES
-          </span>
+      <!-- 04. DevOps -->
+      <article class="skill-card panel">
+        <div class="skill-icon">OPS</div>
+        <h3>DevOps e infraestructura</h3>
+        <p>
+          Contenerización de aplicaciones, automatización de procesos
+          y administración de entornos de desarrollo.
+        </p>
+        <div class="skill-tags">
+          <span>Docker</span>
+          <span>Docker Compose</span>
+          <span>Kubernetes</span>
+          <span>Terraform</span>
+          <span>Jenkins</span>
+          <span>Linux</span>
+          <span>Git</span>
         </div>
+      </article>
 
-        <div class="project-content">
+      <!-- 05. Frontend -->
+      <article class="skill-card panel">
+        <div class="skill-icon">FE</div>
+        <h3>Frontend</h3>
+        <p>
+          Construcción de interfaces web y conexión con servicios
+          backend mediante JavaScript.
+        </p>
+        <div class="skill-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </article>
 
-          <div class="project-meta">
-            <span>04</span>
-            <span>BACKEND · API REST</span>
-          </div>
-
-          <h3>Finora — Gestor de Finanzas Personales</h3>
-
-          <p>
-            Aplicación web para organizar y controlar las finanzas personales.
-            Permite gestionar ingresos y gastos, administrar presupuestos,
-            crear metas de ahorro y consultar informes financieros.
-            Cuenta con una API REST desarrollada con FastAPI, persistencia
-            de datos en PostgreSQL y una arquitectura basada en servicios,
-            repositorios y modelos. Docker Compose facilita la ejecución
-            conjunta del backend, la base de datos y el frontend.
-          </p>
-
-          <div class="skill-tags">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>PostgreSQL</span>
-            <span>SQLAlchemy</span>
-            <span>Alembic</span>
-            <span>HTML5</span>
-            <span>CSS3</span>
-            <span>JavaScript</span>
-            <span>Nginx</span>
-            <span>Docker</span>
-            <span>Docker Compose</span>
-            <span>Git</span>
-            <span>GitHub</span>
-          </div>
-
-          <a
-            class="project-link"
-            href="https://github.com/overrun1026/Proyecto-Finora-Finanzas"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ver proyecto en GitHub ↗
-          </a>
-
-          <!-- Galería de imágenes de Finora -->
-          <details class="project-gallery">
-            <summary>
-              Ver más capturas (haz clic en cualquier imagen para ampliarla)
-            </summary>
-
-            <div class="project-gallery-grid">
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_01.png"
-                  alt="Panel principal con el resumen financiero de Finora"
-                  loading="lazy"
-                >
-                <figcaption>Panel principal · 01</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_02.png"
-                  alt="Gestión de transacciones financieras en Finora"
-                  loading="lazy"
-                >
-                <figcaption>Transacciones · 02</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_03.png"
-                  alt="Administración de presupuestos personales en Finora"
-                  loading="lazy"
-                >
-                <figcaption>Presupuestos · 03</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_04.png"
-                  alt="Metas de ahorro personales en Finora"
-                  loading="lazy"
-                >
-                <figcaption>Metas de ahorro · 04</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_05.png"
-                  alt="Informes y estadísticas financieras de Finora"
-                  loading="lazy"
-                >
-                <figcaption>Informes financieros · 05</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_06.png"
-                  alt="Categorías para organizar los movimientos financieros"
-                  loading="lazy"
-                >
-                <figcaption>Categorías · 06</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_07.png"
-                  alt="Formulario para registrar una transacción financiera"
-                  loading="lazy"
-                >
-                <figcaption>Nueva transacción · 07</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_08.png"
-                  alt="Formulario para configurar un presupuesto"
-                  loading="lazy"
-                >
-                <figcaption>Nuevo presupuesto · 08</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_09.png"
-                  alt="Formulario para crear una meta de ahorro"
-                  loading="lazy"
-                >
-                <figcaption>Nueva meta de ahorro · 09</figcaption>
-              </figure>
-
-              <figure class="project-gallery-item">
-                <img
-                  src="assets/finora-finanzas/imagen_10.png"
-                  alt="Formulario para crear una categoría personalizada"
-                  loading="lazy"
-                >
-                <figcaption>Nueva categoría · 10</figcaption>
-              </figure>
-
-            </div>
-          </details>
-
+      <!-- 06. Otros lenguajes y herramientas -->
+      <article class="skill-card panel">
+        <div class="skill-icon">C++</div>
+        <h3>Otros lenguajes y herramientas</h3>
+        <p>
+          Programación de bajo nivel, control de versiones
+          y automatización de flujos de trabajo.
+        </p>
+        <div class="skill-tags">
+          <span>C++</span>
+          <span>GitHub Actions</span>
+          <span>GitHub</span>
         </div>
       </article>
 
@@ -872,6 +366,21 @@
   </div>
 </section>
 
+<!-- Proyectos -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">TRABAJO SELECCIONADO</span>
+          <h2>Proyectos destacados</h2>
+          <p>Aplicaciones y servicios que muestran mi experiencia práctica en backend, APIs, bases de datos y despliegue.</p>
+        </div>
+        <div class="projects-toolbar">
+          <p>Explora cada proyecto para conocer sus funcionalidades, arquitectura y capturas.</p>
+          <span class="projects-count" id="projects-count">4 proyectos</span>
+        </div>
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+      </div>
+    </section>
 
     <!-- Experiencia -->
     <section class="section section-alt" id="experiencia">
@@ -1159,39 +668,9 @@
     </div>
   </footer>
 
-  <!-- Visor de imágenes: se controla desde script.js -->
-  <div
-    class="image-lightbox"
-    id="image-lightbox"
-    role="dialog"
-    aria-modal="true"
-    aria-label="Visor de capturas del proyecto"
-    aria-describedby="lightbox-hint"
-    hidden
-  >
-    <div class="image-lightbox__topbar">
-      <span class="image-lightbox__title" id="lightbox-title">Captura del proyecto</span>
-      <button class="image-lightbox__button" id="lightbox-close" type="button" aria-label="Cerrar visor">✕</button>
-    </div>
-
-    <div class="image-lightbox__viewport" id="lightbox-viewport">
-      <img class="image-lightbox__image" id="lightbox-image" alt="">
-    </div>
-
-    <div class="image-lightbox__controls">
-      <button class="image-lightbox__button" id="lightbox-prev" type="button" aria-label="Imagen anterior">‹</button>
-      <button class="image-lightbox__button" id="lightbox-zoom-out" type="button" aria-label="Reducir zoom">−</button>
-      <button class="image-lightbox__button" id="lightbox-zoom-reset" type="button" aria-label="Restablecer zoom">100%</button>
-      <button class="image-lightbox__button" id="lightbox-zoom-in" type="button" aria-label="Aumentar zoom">+</button>
-      <button class="image-lightbox__button" id="lightbox-next" type="button" aria-label="Imagen siguiente">›</button>
-    </div>
-
-    <p class="image-lightbox__hint" id="lightbox-hint">
-      Usa +/− para ampliar · ←/→ para cambiar de imagen · Esc para cerrar
-    </p>
-  </div>
-
-  <script src="script.js"></script>
+  <script src="pages/projects.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/projects.js"></script>
 
 </body>
 </html>
