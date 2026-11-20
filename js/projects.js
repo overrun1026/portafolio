@@ -40,7 +40,7 @@
           <div class="skill-tags">${project.stack.slice(0,7).map(tag=>`<span>${esc(tag)}</span>`).join("")}</div>
           <div class="project-actions">
             <a class="button button-primary project-details-link" href="pages/proyecto.html?id=${encodeURIComponent(project.id)}">Ver detalles <span aria-hidden="true">↗</span></a>
-            <a class="button button-secondary" href="${esc(project.repository)}" target="_blank" rel="noopener noreferrer">Ver código</a>
+            <a class="button button-secondary" href="${esc(project.website || project.repository)}" target="_blank" rel="noopener noreferrer">${project.website ? "Ir a la página" : "Ver código"}</a>
           </div>
         </div>
       </article>`).join("");
@@ -62,7 +62,7 @@
       {
         src: resolveImagePath(project.cover),
         alt: project.coverAlt,
-        caption: "Vista de portada"
+        caption: project.coverCaption || "Vista de portada"
       },
       ...project.images.map(image => ({
         ...image,
@@ -77,7 +77,7 @@
         <h1>${esc(project.title)}</h1>
         <p class="project-detail-lead">${esc(project.description)}</p>
         <div class="project-detail-actions">
-          <a class="button button-primary" href="${esc(project.repository)}" target="_blank" rel="noopener noreferrer">Ver repositorio ↗</a>
+          <a class="button button-primary" href="${esc(project.website || project.repository)}" target="_blank" rel="noopener noreferrer">${project.website ? "Ir a la página" : "Ver repositorio"} ↗</a>
           ${project.demo ? `<a class="button button-secondary" href="${esc(project.demo)}" target="_blank" rel="noopener noreferrer">Ver demo ↗</a>` : ""}
         </div>
       </section>
@@ -94,7 +94,7 @@
           <section class="detail-section panel"><span class="panel-number">01 / FUNCIONALIDADES</span><h2>Qué incluye</h2><ul class="feature-list">${project.features.map(item=>`<li>${esc(item)}</li>`).join("")}</ul></section>
           <section class="detail-section panel"><span class="panel-number">02 / ARQUITECTURA</span><h2>Cómo está construido</h2><p>${esc(project.architecture)}</p></section>
         </div>
-        <aside class="project-detail-aside panel"><span class="panel-number">STACK TECNOLÓGICO</span><h2>Tecnologías</h2><div class="skill-tags">${project.stack.map(tag=>`<span>${esc(tag)}</span>`).join("")}</div><a class="project-link" href="${esc(project.repository)}" target="_blank" rel="noopener noreferrer">Explorar código en GitHub ↗</a></aside>
+        <aside class="project-detail-aside panel"><span class="panel-number">STACK TECNOLÓGICO</span><h2>Tecnologías</h2><div class="skill-tags">${project.stack.map(tag=>`<span>${esc(tag)}</span>`).join("")}</div><a class="project-link" href="${esc(project.website || project.repository)}" target="_blank" rel="noopener noreferrer">${project.website ? "Ir a la página" : "Explorar código en GitHub"} ↗</a></aside>
       </section>
       <section class="project-gallery-section"><div class="section-heading"><span class="eyebrow">CAPTURAS DEL PROYECTO</span><h2>Galería</h2><p>Selecciona una imagen para ampliarla. La navegación se mantiene dentro de este proyecto.</p></div><div class="project-gallery-grid">${allImages.map((image,index)=>`<button class="gallery-tile" type="button" data-gallery-index="${index}" aria-label="Ampliar ${esc(image.caption)}"><img src="${esc(image.src)}" alt="${esc(image.alt)}" loading="lazy"><span>${esc(image.caption)}</span></button>`).join("")}</div></section>`;
     initLightbox(detailRoot, allImages, project.title);

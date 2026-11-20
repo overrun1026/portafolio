@@ -99,5 +99,30 @@ window.PORTFOLIO_PROJECTS = [
       {src:"assets/img/projects/finora/resumen-financiero.png",alt:"Resumen financiero personal",caption:"Creación de nuevo presupuesto"},
       {src:"assets/img/projects/finora/docker-servicios.png",alt:"Servicios de Finora ejecutándose con Docker Compose",caption:"Creación de nueva transacción"}
     ]
+  },
+  {
+    id: "juegospros",
+    number: "05",
+    category: "JUEGOS WEB · AWS",
+    title: "JuegosPros — Portal de juegos online",
+    shortDescription: "Portal personal de juegos HTML5 gratuitos con catálogo interactivo, prototipo de emulación NES y SNES e infraestructura estática en AWS.",
+    description: "Desarrollé JuegosPros con ayuda de IA para jugar gratis desde el navegador, sin crear una cuenta. La versión publicada incluye Neon Snake y 2048. Mi objetivo es ampliar el catálogo con juegos HTML5 de distintos géneros que crearé desde cero, incorporar juegos de la comunidad con licencias que permitan su publicación e integrar Google AdSense más adelante.",
+    cover: "assets/img/projects/juegospros/version-publicada.jpg",
+    coverAlt: "Página de inicio de JuegosPros con el catálogo público de 2048 y Neon Snake",
+    coverCaption: "Versión publicada de JuegosPros",
+    website: "https://juegospros.com/",
+    stack: ["React", "Vite", "JavaScript", "HTML5", "CSS3", "Docker Compose", "Amazon S3", "Amazon CloudFront", "Cloudflare DNS", "AWS CLI"],
+    features: [
+      "Juegos HTML5 que se abren directamente en el navegador con teclado y ratón.",
+      "Catálogo modular en JSON con buscador, filtros por categoría y vistas de juegos populares, nuevos y favoritos.",
+      "Panel lateral plegable para dar más espacio al catálogo.",
+      "Prototipo local con emulación en el navegador y un catálogo de prueba de 36 juegos NES y SNES.",
+      "Miniaturas creadas con ayuda de IA para las tarjetas del catálogo de prueba."
+    ],
+    architecture: "El frontend en React y Vite lee un catálogo JSON que organiza los juegos y sus recursos. El desarrollo y las pruebas se hacen en WSL con Docker Compose. El flujo de publicación usa AWS CLI para sincronizar el build con Amazon S3 e invalidar la caché de CloudFront, que distribuye el sitio por HTTPS. Cloudflare gestiona el DNS del dominio.",
+    images: [
+      {src:"assets/img/projects/juegospros/arquitectura-aws.png",alt:"Diagrama de AWS con Amazon S3, CloudFront, Cloudflare DNS y flujo de publicación",caption:"Arquitectura en AWS y flujo de publicación"},
+      {src:"assets/img/projects/juegospros/catalogo-retro.png",alt:"Catálogo de pruebas con 36 juegos de NES y SNES",caption:"Emulación NES y SNES en el entorno de pruebas"}
+    ]
   }
 ];
